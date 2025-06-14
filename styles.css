@@ -1,0 +1,576 @@
+@import url('https://fastly.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Wanted Sans Variable", serif;
+  background-color: #272E32;
+  color: #ffffff;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 1920px;
+  position: relative;
+}
+
+section{
+  width: 1920px;
+  height: 960px;
+  overflow: hidden;
+}
+
+.index-middle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.side-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 30px;
+  color: #ffffff;
+  position: fixed;
+  left: 2%;
+  top: 5%;
+  letter-spacing: 2px;
+  font-family: "DM Serif Display", serif;
+}
+
+.title-section {
+  position: relative;
+  width: 100%;
+  padding: 140px 160px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.main-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.pink-box{
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100px;
+  z-index: -1;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #FFDED2;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.index-Line2{
+  width: 88px;
+  z-index: -1;
+  margin-top: -20px;
+}
+
+.title-1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 230px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.description{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #dddddd;
+}
+
+.w3-content w3-display-container{
+  width: 100%;
+  height: 100%;
+}
+
+.slide-pair {
+  display: none;
+}
+
+.slide-pair img:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  width: 800px;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.slide-pair img:nth-child(2) {
+  position: absolute;
+  bottom: 20%;
+  left: 260px;
+  width: 135px;
+  z-index: -1;
+}
+
+.nav-buttons {
+  position: absolute;
+  bottom: 18%;
+  left: 7%;
+  display: flex;
+  gap: 200px;
+  z-index: 1;
+}
+
+.nav-buttons button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.nav-buttons button:hover {
+  text-decoration: underline;
+}
+
+.line-botton{
+  position: absolute;
+  bottom: 240px;
+  left: 260px;
+  width: 135px;
+  z-index: -1;
+}
+
+.main-nav {
+  margin-top: -110px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 80px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  top: 0px;
+}
+
+.Unseo_Index2{
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  width: 1900px;
+  z-index: -2;
+}
+
+.Unseo_Index1 {
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  width: 800px;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.profile-section {
+  position: relative;
+  width: 1920px;
+  height: 960px;
+}
+
+.profile-container{
+  position: absolute;
+  display: flex ;
+  gap: 150px;
+  left: 19%;
+  top: 6.5%;
+  align-items: center;
+}
+
+.profile{
+
+}
+
+.profile-text{
+  font-size: 35px;
+}
+
+.PROFILE {
+  font-family: "DM Serif Display", serif;
+  font-size: 60px;
+}
+
+.profil-backtext1{
+  font-family: "DM Serif Display", serif;
+  font-size: 480px;
+  opacity: 0.03;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+}
+
+.profil-backtext2{
+  font-family: "DM Serif Display", serif;
+  font-size: 180px;
+  opacity: 0.03;
+  position: absolute;
+  top: 0%;
+  right: -11.5%;
+  writing-mode: sideways-lr;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+  line-height: 1.2;
+}
+
+.illustrator-section {
+  font-family: "DM Serif Display", serif;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.midle-title {
+  position: absolute;
+  font-family: 'DM Serif Display', serif;
+  font-size: 60px;
+  left: 150px;
+  top: 20px;
+}
+
+.Line-illustretion {
+}
+
+.illustration-img{
+  width: 200px;
+  opacity: 0.4;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.illustration-img > img:nth-child(1) {
+  width: 200px;
+  opacity: 0.4;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.illustration-img > img:nth-child(2) {
+  width: 200px;
+  opacity: 0.4;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.illustration-img > img:nth-child(3) {
+  width: 200px;
+  opacity: 0.4;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.illustration-img > img:nth-child(4) {
+  width: 200px;
+  opacity: 0.4;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.illustration-img > img:nth-child(5) {
+  width: 200px;
+  opacity: 0.4;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.Unseo-Illustrator {
+}
+
+.illustration-backtext1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.self-section {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.a-text {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  bottom: 150px;
+  left: 180px;
+}
+
+.mini-title {
+}
+
+.mini-title p:nth-child(1) {
+  position: absolute;
+  font-size: 64px;
+  font-weight: bold;
+  bottom: 80%;
+}
+
+.mini-title p:nth-child(2) {
+  font-size: 24px;
+}
+
+.tex-box {
+  font-size: 24px;
+}
+
+.line-box{
+  width: 95%;
+  height: 90%;
+  border: 1px solid white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  left: 2.5%;
+  z-index: -1;
+}
+
+.Youtube_botten {
+}
+
+.Line-box {
+ 
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110vh;
+  object-fit: cover;
+  z-index: -3;
+  pointer-events: none;
+}
+
+.background-video1 {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 110vh;
+  object-fit: cover;
+  z-index: -3;
+  pointer-events: none;
+}
+
+.typo-section {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.BusanContest-section {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.podcasts-section {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.podcasts-line1 {
+  position: absolute;
+  top: 120px;
+  left: 500px;
+  width: 1000px;
+  z-index: -1;
+}
+
+.podcast-logo {
+  position: absolute;
+  width: 650px;
+  top: 250px;
+  left: 160px;
+}
+
+.podcast-linebox {
+  position: absolute;
+  width: 670px;
+  top: 240px;
+  left: 150px;
+}
+
+.podcast-text {
+  position: absolute;
+  top: 250px;
+  left: 880px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mini-title2 p:nth-child(1) {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.mini-title2 p:nth-child(2) {
+  font-size: 24px;
+}
+
+.text-box-podcasts {
+  font-size: 24px;
+  color: #888888;
+}
+
+.podcast-botton{
+  position:absolute;
+  top:650px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 1000px;
+}
+
+.Youtube_botten2 {
+  width: 600px;
+  display: flex;
+  gap: 50px;
+}
+
+.Youtube_botten2 p:nth-child(1){
+  width: 250px;
+}
+
+.Youtube_botten2 p:nth-child(2){
+  width: 250px;
+}
+
+.podcasts_episode {
+  width: 600px;
+}
+
+.D-section{
+  position: relative;
+  box-sizing: border-box;
+}
+
+.D-content {
+  margin: 0 auto;
+}
+
+.D-line1 {
+  position: absolute;
+  width: 125;
+  top: 120px;
+  left: 500px;
+  z-index: -1;
+}
+
+.D-img {
+  position: absolute;
+  display: flex ;
+  gap: 40px;
+  top: 200px;
+  left: 150px;
+  justify-content: center;
+}
+
+.D-img1 {
+  width: 800px;
+  height: auto;
+}
+
+.D-img2 {
+  width: 800px;
+  height: auto;
+}
+
+.D-text{
+  position: absolute;
+  top: 680px;
+  left: 150px;
+}
+
+.mini-title3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.mini-title3 > p { margin: 0px; }
+
+.mini-title3 p:nth-child(1) {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.mini-title3 p:nth-child(2){
+   font-size: 24px;
+}
+
+.text-box-3D {
+  position: absolute;
+  bottom: -10px;
+  width: 1000px;
+  font-size: 24;
+  color: #888888;
+}
+
+.Youtube_botten4 {
+  position:absolute;
+  width: 250px;
+  bottom: 200px;
+  right: 130px;
+}
+
+.D-backtext {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
+.black-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  z-index: -2;
+  pointer-events: none;
+}
