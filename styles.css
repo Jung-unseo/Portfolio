@@ -20,7 +20,7 @@ body {
 section {
   width: 1920px;
   height: 100vh;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .index-middle {
@@ -528,25 +528,25 @@ section {
 .podcast-logo {
   position: absolute;
   width: 650px;
-  top: 250px;
+  top: 200px;
   left: 160px;
 }
 
 .podcast-linebox {
   position: absolute;
   width: 670px;
-  top: 240px;
+  top: 190px;
   left: 150px;
 }
 
 .podcast-text {
   position: absolute;
-  top: 250px;
+  top: 200px;
   left: 880px;
   width: 900px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .mini-title2 p:nth-child(1) {
@@ -565,7 +565,7 @@ section {
 
 .podcast-botton {
   position: absolute;
-  top: 650px;
+  top: 600px;
   right: 50px;
   display: flex;
   flex-direction: column;
@@ -664,7 +664,7 @@ section {
 .Youtube_botten4 {
   position: absolute;
   width: 250px;
-  bottom: 200px;
+  bottom: 170px;
   right: 130px;
 }
 

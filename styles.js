@@ -40,7 +40,7 @@ document.addEventListener("wheel", (event) => {
   // 스크롤 완료 후 플래그 해제
   setTimeout(() => {
     isScrolling = false;
-  }, 500);
+  }, 800);
 });
 
 prevButton.addEventListener("click", () => {
