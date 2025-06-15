@@ -1,251 +1,395 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>poetfolio of unseo unseo jung</title>
+  <head>
+    <title>poetfolio of unseo unseo jung</title>
 
-<link rel="stylesheet" href="styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script defer src="styles.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="styles.js"></script>
+  </head>
+  <body>
+    <div class="side-text">INDEX</div>
 
-  <div class="side-text">INDEX</div>
+    <div class="wrapper">
+      <section class="title-section">
+        <header class="main-header">
+          <nav class="main-nav">
+            <a href="#">HOME</a>
+            <a href="#">PROFILE</a>
+            <a href="#">INDEX</a>
+          </nav>
+        </header>
 
-  <div class="wrapper">
-    <section class="title-section">
-      <header class="main-header">
-        <nav class="main-nav">
-          <a href="#">HOME</a>
-          <a href="#">PROFILE</a>
-          <a href="#">INDEX</a>
-        </nav>
-      </header>
+        <img src="img/index/index_pink box.png" class="pink-box" />
 
-        <img src="img/index/index_pink box.png" class="pink-box">
-       
         <div class="index-middle">
           <div class="subtitle">PORTFOLIO OF UNSEO JUNG</div>
-          <img src="img/Line 1.png" class="index-Line2">
+          <img src="img/Line 1.png" class="index-Line2" />
         </div>
 
         <p class="title-1">My Portfolio</p>
         <div class="description">
-          Exploring planning, 3D, and video creation,<br>
-          I’m learning to tell stories in my own voice.<br>
-          With each step forward,<br>
+          Exploring planning, 3D, and video creation,<br />
+          I’m learning to tell stories in my own voice.<br />
+          With each step forward,<br />
           I aim to craft content that’s both thoughtful and complete.
-        </div>  
+        </div>
 
-        <img src="img/black_box.png" class="Unseo_Index2">
+        <img src="img/black_box.png" class="Unseo_Index2" />
 
-    <div class="w3-content w3-display-container">
-      <div class="slide-pair">
-        <img src="img/index_self.png" alt="Index 1">
-        <img src="img/index/index-line1.png" alt="Line 1">
-      </div>
+        <div class="w3-content w3-display-container">
+          <div class="slide-pair">
+            <img src="img/index_self.png" alt="Index 1" />
+            <img src="img/index/index-line1.png" alt="Line 1" />
+          </div>
 
-      <div class="slide-pair">
-        <img src="img/index/index-img2.png" alt="Index 2">
-        <img src="img/index/index-line2.png" alt="Line 2">
-      </div>
+          <div class="slide-pair">
+            <img src="img/index/index-img2.png" alt="Index 2" />
+            <img src="img/index/index-line2.png" alt="Line 2" />
+          </div>
 
-      <div class="slide-pair">
-        <img src="img/index/index-img3.png" alt="Index 3">
-        <img src="img/index/index-line3.png" alt="Line 3">
-      </div>
+          <div class="slide-pair">
+            <img src="img/index/index-img3.png" alt="Index 3" />
+            <img src="img/index/index-line3.png" alt="Line 3" />
+          </div>
 
-      <div class="nav-buttons">
-        <button onclick="plusDivs(-1)">PREV</button>
-        <button onclick="plusDivs(1)">NEXT</button>
-      </div>
-    </div>
+          <div class="nav-buttons">
+            <button onclick="plusDivs(-1)">PREV</button>
+            <button onclick="plusDivs(1)">NEXT</button>
+          </div>
+        </div>
 
-    <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
 
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
+          function plusDivs(n) {
+            showDivs((slideIndex += n));
+          }
 
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("slide-pair");
-        if (n > x.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = x.length }
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        x[slideIndex - 1].style.display = "block";
-      }
-      setInterval(function() {
-      plusDivs(1);
-      }, 3000);
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slide-pair");
+            if (n > x.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = x.length;
+            }
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+          }
+          setInterval(function () {
+            plusDivs(1);
+          }, 3000);
 
-      let currentSlide = 0;
-      const totalSlides = document.querySelectorAll(".slide").length;
-      const track = document.querySelector(".slider-track");
+          let currentSlide = 0;
+          const totalSlides = document.querySelectorAll(".slide").length;
+          const track = document.querySelector(".slider-track");
 
-      function goToSlide(n) {
-        currentSlide = (n + totalSlides) % totalSlides;
-        track.style.transform = `translateX(-${currentSlide * 100}%)`;
-      }
-    </script>
-    </section>
-   
-    <section class="profile-section">
-      <div class="profile-container">
-        <img src="img/Unseo_Proof Photo.jpg" width="400px">
-        <img src="img/index/profile_Line2.png">
-        <div class="profile">
+          function goToSlide(n) {
+            currentSlide = (n + totalSlides) % totalSlides;
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+          }
+        </script>
+      </section>
+
+      <section class="profile-section">
+        <div class="profile-container">
+          <img src="img/Unseo_Proof Photo.jpg" width="400px" />
+          <img src="img/index/profile_Line2.png" />
+          <div class="profile">
             <p class="PROFILE">PROFILE</p>
             <p class="profile-text">Academic Abdility</p>
             <p>2023.01 &emsp;부산 해운대여자고등학교 졸업</p>
             <p>2023.03 ~ 경성대학교 미디어콘텐츠학과 재학</p>
-            <br/>
+            <br />
             <p class="profile-text">License</p>
             <p>2013.03 &emsp;아래한글 A급</p>
             <p>2015.06 &emsp;한컴타자(한글) A급</p>
             <p>2016.03 &emsp;한컴엑셀(한셀) A급</p>
-            <br/>
+            <br />
             <p class="profile-text">Career</p>
             <p>2023.03 &emsp;1학년 과대표</p>
             <p>2024.03 &emsp;2학년 과대표</p>
             <p>2024.02 ~ 경성대학교 학내언론사 MCC기자</p>
-        </div>
-      </div>
-
-      <p class="profil-backtext1">FILE</p>
-      <p class="profil-backtext2">PROFILE</p>
-    </section>
-   
-    <section class="illustrator-section">
-      <p class="midle-title">ILLUSTRATION</p>
-      <img src="img/illustrator/illustration_Line1.png" class="Line-illustretion">
-      <div class="illustration-img">
-        <img src="img/illustrator/커피.jpg" class="Unseo-Illustrator">
-        <img src="img/illustrator/여행.png" class="Unseo-Illustrator">
-        <img src="img/illustrator/시계.jpg" class="Unseo-Illustrator">
-        <img src="img/illustrator/대중교통.jpg" class="Unseo-Illustrator">
-        <img src="img/illustrator/스마트폰.jpg" class="Unseo-Illustrator">
-      </div>
-      <img src="img/illustrator/illustration_text1.png" class="illustration-backtext1">
-    </section>
-
-    <section class="self-section">
-      <div class="a-text">
-        <div class="mini-title">
-          <p>Map to Me</p>
-          <p>애니메이션 01:11</p>
-        </div>
-        <div class="tex-box">
-          보물을 찾기 위한 여정을 통해 ‘나’라는 사람을 소개 영상 속 고양이는 곧 나 자신을 <br>
-          대변하는 캐릭터 보물 찾기의 과정은 내가 지금까지 걸어온 길, 좋아하는 것들, 중요하게 <br>
-          생각하는 가치들을 상징하며 여정을 통해 다양한 장소를 거치고 마지막에 <br>
-          ‘나만의 보물’을 발견하는 구조로 구성
-        </div>
-        <a href="https://youtu.be/Vckho1Z5aFc?si=TS4tt1K3KheecfoV" target="_blank"><img src="img/Youtube_botten.png" class="Youtube_botten"></a>
-      </div>
-      <div class="line-box"></div>
-      <video autoplay muted loop playsinline class="background-video">
-        <source src="video/cupid.mp4" type="video/mp4">
-      </video>      
-      <div class="black-gradient"></div>
-    </section>
-
-    <section class="typo-section">
-      <div class="a-text">
-        <div class="mini-title">
-          <p>Cupid</p>
-          <p>타이포그래픽 00:58</p>
-        </div>
-        <div class="tex-box">
-          FIFTY FIFTY의 노래 Cupid의 가사를 기반으로 음악의 흐름과 감정선을 시각적으로 <br>
-          표현한 타이포그래피 모션 영상 작업 각 가사의 분위기에 어울리는 색상과 그래픽 요소를 <br>
-          함께 활용해 단어 하나하나가 가진 감정을 시각화함
-        </div>
-        <a href="https://youtu.be/7PTVdRsLRB8?si=oOY0hupkOsfeL4Ns" target="_blank"><img src="img/Youtube_botten.png" class="Youtube_botten"></a>
-      </div>
-      <div class="line-box"></div>
-      <video autoplay muted loop playsinline class="background-video">
-        <source src="video/self.mp4" type="video/mp4">
-      </video>      
-      <div class="black-gradient"></div>
-    </section>
-
-    <section class="BusanContest-section">
-      <div class="a-text">
-        <div class="mini-title">
-          <p>글로벌 허브 도시로의 도약</p>
-          <p>단편 다큐멘터리 02:18</p>
-        </div>
-        <div class="tex-box">
-          글로벌 허브도시 부산을 주제로 한 영상 다시 태어나도 살고 싶은 도시라는 메시지를 <br>
-          중심으로, 부산의 자연, 사람, 산업, 문화를 함께 담았음 감성과 정보가 조화를 이루는 <br>
-          구성으로, 도시의 현재와 미래 비전을 동시에 보여줌
-        </div>
-        <a href="https://youtu.be/7PTVdRsLRB8?si=oOY0hupkOsfeL4Ns" target="_blank"><img src="img/Youtube_botten.png" class="Youtube_botten"></a>
-      </div>
-      <div class="line-box"></div>
-      <video autoplay muted loop playsinline class="background-video1">
-        <source src="video/busan.mp4" type="video/mp4">
-      </video>      
-
-      <div class="black-gradient"></div>
-     
-    </section>
-
-    <section class="podcasts-section">
-      <p class="midle-title">PODCASTS</p>
-      <img src="img/podcasts/Podcasts_Line1.png" class="podcasts-line1">
-      <img src="img/podcasts/게임스토리-로고.png" class="podcast-logo">
-      <img src="img/podcasts/게임스토리-로고_테두리.png" class="podcast-linebox">
-      <div class="podcast-text">
-        <div class="mini-title2">
-          <p>스토리 모드 - 게임 속 스토리</p>
-          <p>유튜브 기반 비주얼 팟캐스트</p>
-        </div>
-        <div class="text-box-podcasts">
-          게임스토리는 단순한 플레이 영상이 아닌, 게임의 내러티브에 집중한 비주얼 팟캐스트<br>
-          각 회차마다 한 게임을 깊이 있게 분석하며, 세계관의 구조·인물의 서사·플레이어의 위치를 탐구<br>
-          기획부터 대본, 연출, 영상 편집까지 직접 수행하며, 게임과 이야기의 접점을 끌어내고자 했음
-        </div>
-      </div>
-      <div class="podcast-botton">
-        <div class="Youtube_botten2">
-          <a href="https://youtube.com/playlist?list=PLReOXzXg-_3PAXe1Pxr1x0278uag0T_xf&si=qlDM-g0hOEUb9MeO" target="_blank"><img src="img/Youtube_botten.png"></a>
-          <a href="https://podbbang.page.link/oDo9nvBUfCieX3yJA" target="_blank"><img src="img/podcasts/팟빵 버튼.png"></a>
-        </div>
-        <a href="podcast.html" target="_blank"><img src="img/podcasts/episode.png"  class="podcasts_episode"></a>
-      </div>
-    </section>
-
-    <section class="D-section">
-      <div class="D-content">
-        <p class="midle-title">3D CONTENT</p>
-        <img src="img/3D content/3D_Line1.png" class="D-line1">
-        <div class="D-img">
-          <img src="img/3D content/시포디 지상.png" class="D-img1">
-          <img src="img/3D content/시포디 지하.png" class="D-img2">
-        </div>
-        <div class="D-text">
-          <div class="mini-title3">
-            <p>Dual City</p>
-            <p>3D 콘텐츠</p>
-          </div>
-          <div class="text-box-3D">
-            상층은 완벽함을 추구하는 미래 도시, 하층은 버려진 기술과 사람들이 살아가는 사이버펑크 세계<br>
-            지상에서 시작해 지하로 내려가는 엘리베이터를 따라, 두 세계의 극단적인 대비를 시각적으로 풀어낸 3D 애니메이션 씬
           </div>
         </div>
-        <a href="https://youtu.be/f0bdTsxH71w" target="_blank"><img src="img/Youtube_botten.png" class="Youtube_botten4"></a>
-     
-        <img src="img/3D content/3D_text1.png" class="D-backtext">
-      </div>
-    </section>
-  </div>
-</body>
+
+        <p class="profil-backtext1">FILE</p>
+        <p class="profil-backtext2">PROFILE</p>
+      </section>
+
+      <section class="illustrator-section">
+        <p class="midle-title">ILLUSTRATION</p>
+        <img
+          src="img/illustrator/illustration_Line1.png"
+          class="Line-illustretion"
+        />
+        <div class="illustration-img">
+          <div class="illus-img-con active" data-img="1">
+            <img src="img/illustrator/커피.jpg" class="Unseo-Illustrator" />
+          </div>
+          <div class="illus-img-con" data-img="2">
+            <img src="img/illustrator/여행.png" class="Unseo-Illustrator" />
+          </div>
+          <div class="illus-img-con" data-img="3">
+            <img src="img/illustrator/시계.jpg" class="Unseo-Illustrator" />
+          </div>
+          <div class="illus-img-con" data-img="4">
+            <img src="img/illustrator/대중교통.jpg" class="Unseo-Illustrator" />
+          </div>
+          <div class="illus-img-con smart" data-img="5">
+            <img src="img/illustrator/스마트폰.jpg" class="Unseo-Illustrator" />
+          </div>
+        </div>
+        <!-- 커피 -->
+        <div class="img-description">
+          <div class="btn-close">
+            <img src="img/close.png" alt="close" />
+          </div>
+          <div class="desc-img">
+            <img src="img/illustrator/커피.jpg" class="Unseo-Illustrator" />
+          </div>
+          <div class="description">
+            <p class="desc-title">COFFEE</p>
+            <p class="desc-contents">
+              기계에서 커피를 주입받은 직장인이 컨베이어 벨트를 따라 출근하는
+              모습을 통해, 현대인의 습관적 루틴과 카페인 의존을 풍자적으로
+              표현한 일러스트
+            </p>
+          </div>
+        </div>
+        <!-- 여행 -->
+        <div class="img-description">
+          <div class="btn-close">
+            <img src="img/close.png" alt="close" />
+          </div>
+          <div class="desc-img">
+            <img src="img/illustrator/여행.png" class="Unseo-Illustrator" />
+          </div>
+          <div class="description">
+            <p class="desc-title">TRAVEL</p>
+            <p class="desc-contents">
+              세계 여러 도시를 돌아다니는 여행을 보드게임 형식으로 재구성한
+              일러스트. 말 대신 비행기, 카드 대신 항공권, 칸마다 여행지
+              일러스트를 배치해, 게임처럼 즐기는 여행의 설렘과 선택의 자유로움을
+              표현했다
+            </p>
+          </div>
+        </div>
+        <!-- 시계 -->
+        <div class="img-description">
+          <div class="btn-close">
+            <img src="img/close.png" alt="close" />
+          </div>
+          <div class="desc-img">
+            <img src="img/illustrator/시계.jpg" class="Unseo-Illustrator" />
+          </div>
+          <div class="description">
+            <p class="desc-title">CLOCK</p>
+            <p class="desc-contents">
+              이 일러스트는 시간의 상대성과 인간의 삶을 시계라는 오브제를 통해
+              표현한 작품이다. 사람마다 다른 리듬의 시간을 살아가며, 어떤 이는
+              시간에 쫓기고, 어떤 이는 시간이 멈추기를 바라며 살아간다. 부서진
+              시계는 죽음이라는 종착점을 암시한다
+            </p>
+          </div>
+        </div>
+        <!-- 대중교통 -->
+        <div class="img-description">
+          <div class="btn-close">
+            <img src="img/close.png" alt="close" />
+          </div>
+          <div class="desc-img">
+            <img src="img/illustrator/대중교통.jpg" class="Unseo-Illustrator" />
+          </div>
+          <div class="description">
+            <p class="desc-title">PUBLIC TRANSPORT</p>
+            <p class="desc-contents">
+              우리의 일상에 자연스럽게 스며든 대중교통 속 순간들을 담은 일러스트
+              <br />
+              버스와 지하철에서 마주치는 소소한 장면들을 추억의 사진처럼 구성해,
+              누구나 공감할 수 있는 감정의 조각들을 표현
+            </p>
+          </div>
+        </div>
+        <!-- 스마트폰 -->
+        <div class="img-description smart">
+          <div class="btn-close">
+            <img src="img/close.png" alt="close" />
+          </div>
+          <div class="desc-img">
+            <img src="img/illustrator/스마트폰.jpg" class="Unseo-Illustrator" />
+          </div>
+          <div class="description">
+            <p class="desc-title">SMARTPHONE</p>
+            <p class="desc-contents">
+              영화 업(Up)의 상징적 장면을 패러디해, 스마트폰에 갇힌 현대인의
+              모습을 유쾌하게 표현한 일러스트. 앱 아이콘들이 풍선이 되어
+              스마트폰을 띄우고, 그 안에는 화면 속에 갇힌 인물이 매달려 있다
+            </p>
+          </div>
+        </div>
+        <div class="prev-button">◀</div>
+        <div class="next-button">▶</div>
+        <img
+          src="img/illustrator/illustration_text1.png"
+          class="illustration-backtext1"
+        />
+      </section>
+
+      <section class="self-section">
+        <div class="a-text">
+          <div class="mini-title">
+            <p>Map to Me</p>
+            <p>애니메이션 01:11</p>
+          </div>
+          <div class="tex-box">
+            보물을 찾기 위한 여정을 통해 ‘나’라는 사람을 소개 영상 속 고양이는
+            곧 나 자신을 <br />
+            대변하는 캐릭터 보물 찾기의 과정은 내가 지금까지 걸어온 길, 좋아하는
+            것들, 중요하게 <br />
+            생각하는 가치들을 상징하며 여정을 통해 다양한 장소를 거치고 마지막에
+            <br />
+            ‘나만의 보물’을 발견하는 구조로 구성
+          </div>
+          <a
+            href="https://youtu.be/Vckho1Z5aFc?si=TS4tt1K3KheecfoV"
+            target="_blank"
+            ><img src="img/Youtube_botten.png" class="Youtube_botten"
+          /></a>
+        </div>
+        <div class="line-box"></div>
+        <video autoplay muted loop playsinline class="background-video">
+          <source src="video/self.mp4" type="video/mp4" />
+        </video>
+        <div class="black-gradient"></div>
+      </section>
+
+      <section class="typo-section">
+        <div class="a-text">
+          <div class="mini-title">
+            <p>Cupid</p>
+            <p>타이포그래픽 00:58</p>
+          </div>
+          <div class="tex-box">
+            FIFTY FIFTY의 노래 Cupid의 가사를 기반으로 음악의 흐름과 감정선을
+            시각적으로 <br />
+            표현한 타이포그래피 모션 영상 작업 각 가사의 분위기에 어울리는
+            색상과 그래픽 요소를 <br />
+            함께 활용해 단어 하나하나가 가진 감정을 시각화함
+          </div>
+          <a
+            href="https://youtu.be/7PTVdRsLRB8?si=oOY0hupkOsfeL4Ns"
+            target="_blank"
+            ><img src="img/Youtube_botten.png" class="Youtube_botten"
+          /></a>
+        </div>
+        <div class="line-box"></div>
+        <video autoplay muted loop playsinline class="background-video">
+          <source src="video/cupid.mp4" type="video/mp4" />
+        </video>
+        <div class="black-gradient"></div>
+      </section>
+
+      <section class="BusanContest-section">
+        <div class="a-text">
+          <div class="mini-title">
+            <p>글로벌 허브 도시로의 도약</p>
+            <p>단편 다큐멘터리 02:18</p>
+          </div>
+          <div class="tex-box">
+            글로벌 허브도시 부산을 주제로 한 영상 다시 태어나도 살고 싶은
+            도시라는 메시지를 <br />
+            중심으로, 부산의 자연, 사람, 산업, 문화를 함께 담았음 감성과 정보가
+            조화를 이루는 <br />
+            구성으로, 도시의 현재와 미래 비전을 동시에 보여줌
+          </div>
+          <a
+            href="https://youtu.be/7PTVdRsLRB8?si=oOY0hupkOsfeL4Ns"
+            target="_blank"
+            ><img src="img/Youtube_botten.png" class="Youtube_botten"
+          /></a>
+        </div>
+        <div class="line-box"></div>
+        <video autoplay muted loop playsinline class="background-video1">
+          <source src="video/busan.mp4" type="video/mp4" />
+        </video>
+
+        <div class="black-gradient"></div>
+      </section>
+
+      <section class="podcasts-section">
+        <p class="midle-title">PODCASTS</p>
+        <img src="img/podcasts/Podcasts_Line1.png" class="podcasts-line1" />
+        <img src="img/podcasts/게임스토리-로고.png" class="podcast-logo" />
+        <img
+          src="img/podcasts/게임스토리-로고_테두리.png"
+          class="podcast-linebox"
+        />
+        <div class="podcast-text">
+          <div class="mini-title2">
+            <p>스토리 모드 - 게임 속 스토리</p>
+            <p>유튜브 기반 비주얼 팟캐스트</p>
+          </div>
+          <div class="text-box-podcasts">
+            게임스토리는 단순한 플레이 영상이 아닌, 게임의 내러티브에 집중한
+            비주얼 팟캐스트<br />
+            각 회차마다 한 게임을 깊이 있게 분석하며, 세계관의 구조·인물의
+            서사·플레이어의 위치를 탐구<br />
+            기획부터 대본, 연출, 영상 편집까지 직접 수행하며, 게임과 이야기의
+            접점을 끌어내고자 했음
+          </div>
+        </div>
+        <div class="podcast-botton">
+          <div class="Youtube_botten2">
+            <a
+              href="https://youtube.com/playlist?list=PLReOXzXg-_3PAXe1Pxr1x0278uag0T_xf&si=qlDM-g0hOEUb9MeO"
+              target="_blank"
+              ><img src="img/Youtube_botten.png"
+            /></a>
+            <a
+              href="https://podbbang.page.link/oDo9nvBUfCieX3yJA"
+              target="_blank"
+              ><img src="img/podcasts/팟빵 버튼.png"
+            /></a>
+          </div>
+          <a href="podcast.html" target="_blank"
+            ><img src="img/podcasts/episode.png" class="podcasts_episode"
+          /></a>
+        </div>
+      </section>
+
+      <section class="D-section">
+        <div class="D-content">
+          <p class="midle-title">3D CONTENT</p>
+          <img src="img/3D content/3D_Line1.png" class="D-line1" />
+          <div class="D-img">
+            <img src="img/3D content/시포디 지상.png" class="D-img1" />
+            <img src="img/3D content/시포디 지하.png" class="D-img2" />
+          </div>
+          <div class="D-text">
+            <div class="mini-title3">
+              <p>Dual City</p>
+              <p>3D 콘텐츠</p>
+            </div>
+            <div class="text-box-3D">
+              상층은 완벽함을 추구하는 미래 도시, 하층은 버려진 기술과 사람들이
+              살아가는 사이버펑크 세계<br />
+              지상에서 시작해 지하로 내려가는 엘리베이터를 따라, 두 세계의
+              극단적인 대비를 시각적으로 풀어낸 3D 애니메이션 씬
+            </div>
+          </div>
+          <a href="https://youtu.be/f0bdTsxH71w" target="_blank"
+            ><img src="img/Youtube_botten.png" class="Youtube_botten4"
+          /></a>
+
+          <img src="img/3D content/3D_text1.png" class="D-backtext" />
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
-
-
-
