@@ -98,10 +98,10 @@ navTexts.forEach((nav, idx) => {
     case 3:
       nav.addEventListener("click", () => {
         scrollTo({
-          top: clientHeight * 8,
+          top: clientHeight * 9,
           behavior: "smooth",
         });
-        currentScreen = 8;
+        currentScreen = 9;
         navContainer.classList.remove("active");
         isScrolling = false;
       });
@@ -109,10 +109,10 @@ navTexts.forEach((nav, idx) => {
     case 4:
       nav.addEventListener("click", () => {
         scrollTo({
-          top: clientHeight * 9,
+          top: clientHeight * 10,
           behavior: "smooth",
         });
-        currentScreen = 9;
+        currentScreen = 10;
         navContainer.classList.remove("active");
         isScrolling = false;
       });
