@@ -1,4 +1,7 @@
 const sections = document.querySelectorAll("section");
+const sideText = document.querySelector(".side-text");
+const navContainer = document.querySelector(".nav");
+const navTexts = document.querySelectorAll(".nav > p");
 const illustrationImgs = document.querySelectorAll(".illus-img-con");
 const prevButton = document.querySelector(".prev-button");
 const nextButton = document.querySelector(".next-button");
@@ -40,7 +43,81 @@ document.addEventListener("wheel", (event) => {
   // 스크롤 완료 후 플래그 해제
   setTimeout(() => {
     isScrolling = false;
-  }, 500);
+  }, 400);
+});
+
+sideText.addEventListener("click", () => {
+  const clientHeight = window.innerHeight;
+  if (navContainer.classList.contains("active")) {
+    navContainer.classList.remove("active");
+    isScrolling = false;
+  } else {
+    navContainer.classList.add("active");
+    isScrolling = true;
+  }
+  navContainer.style.top = `${clientHeight * currentScreen}px`;
+});
+
+navTexts.forEach((nav, idx) => {
+  const clientHeight = window.innerHeight;
+
+  switch (idx) {
+    case 0:
+      nav.addEventListener("click", () => {
+        scrollTo({
+          top: clientHeight * 1,
+          behavior: "smooth",
+        });
+        currentScreen = 1;
+        navContainer.classList.remove("active");
+        isScrolling = false;
+      });
+      break;
+    case 1:
+      nav.addEventListener("click", () => {
+        scrollTo({
+          top: clientHeight * 2,
+          behavior: "smooth",
+        });
+        currentScreen = 2;
+        navContainer.classList.remove("active");
+        isScrolling = false;
+      });
+      break;
+    case 2:
+      nav.addEventListener("click", () => {
+        scrollTo({
+          top: clientHeight * 3,
+          behavior: "smooth",
+        });
+        currentScreen = 3;
+        navContainer.classList.remove("active");
+        isScrolling = false;
+      });
+      break;
+    case 3:
+      nav.addEventListener("click", () => {
+        scrollTo({
+          top: clientHeight * 8,
+          behavior: "smooth",
+        });
+        currentScreen = 8;
+        navContainer.classList.remove("active");
+        isScrolling = false;
+      });
+      break;
+    case 4:
+      nav.addEventListener("click", () => {
+        scrollTo({
+          top: clientHeight * 9,
+          behavior: "smooth",
+        });
+        currentScreen = 9;
+        navContainer.classList.remove("active");
+        isScrolling = false;
+      });
+      break;
+  }
 });
 
 prevButton.addEventListener("click", () => {
@@ -64,6 +141,7 @@ nextButton.addEventListener("click", () => {
 illustrationImgs.forEach((img, index) => {
   img.addEventListener("click", () => {
     imgDescriptions[index].classList.add("active");
+    isScrolling = true;
   });
 });
 
@@ -72,6 +150,8 @@ closeBtns.forEach((btn, idx) => {
   btn.addEventListener("click", () => {
     console.log("close");
     imgDescriptions[idx].classList.remove("active");
+
+    isScrolling = false;
   });
 });
 
